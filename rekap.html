@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kendari Command Center</title>
+
+    <!-- ANIMATE.CSS -->
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- My STYLE -->
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+
+    <!-- CHART JS FOR -->
+    <script type="text/javascript" src="node_modules/chart.js/dist/Chart.bundle.js"></script>
+    <script type="text/javascript" src="node_modules/chart.js/dist/Chart.bundle.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="min-vh-100 mw-100" id="bxsz">
+        <div class="container-fluid">
+            <div class="row ml-1 mr-1">
+                <div class="col-7">
+                    <div class="row mb-3" id="widget">
+                        <div class="col-12 bg-white mt-2">
+                            <div class="row">
+                                <div class="col-3">
+                                    <h5 class="mt-4">REKAP & DATA</h5>
+                                    <p>komoditi</p>
+                                    <button type="button" class="btn-sm btn-primary shadow" data-toggle="modal"
+                                        data-target=".bd-example-modal-lg">Panduan</button>
+                                    <!-- MODAL PANDUAN -->
+                                    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
+                                        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title">Panduan</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <img src="assets/img/Rekap_Data.png" width="100%" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-9" id="widgetitems">
+                                    <div class="col-4 float-left" id="wdg">
+                                        <div class="shadow p-3 bg-white rounded h-100 animated infinite pulse mt-2" id="widitem">
+                                            <img src="assets/img/icon/w1.png" class="align-middle">
+                                            <h6 class="mb-0">3.000</h6>
+                                            <p>Data PNS</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 float-left" id="wdg">
+                                        <div class="shadow p-3 bg-white rounded h-100 animated infinite pulse mt-2" id="widitem">
+                                            <img src="assets/img/icon/w2.png" class="align-middle">
+                                            <h6 class="mb-0">3.000</h6>
+                                            <p>Izin Terbit</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 float-left" id="wdg">
+                                        <div class="shadow p-3 bg-white rounded h-100 animated infinite pulse mt-2" id="widitem">
+                                            <img src="assets/img/icon/w3.png" class="align-middle">
+                                            <h6 class="mb-0">3.000</h6>
+                                            <p>Outlet Koperasi</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" id="newsdata">
+                        <div class="col-6 pl-0 pr-2">
+                            <div class="shadow-lg p-3 bg-white rounded h-100 animated fadeIn" id="komoditi">
+                                <div class="input-group mb-2 title">
+                                    <h6><i>Harga Komoditi :</i></h6>
+                                </div>
+                                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <img src="assets/img/komoditi/322e8205.png" alt=""></div>
+                                                <div class="col-8 p-0">
+                                                    <h6>Komoditi</h6>
+                                                    <p>Rp. xx.xxx.xx</p>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <img src="assets/img/komoditi/322e8205.png" alt=""></div>
+                                                <div class="col-8 p-0">
+                                                    <h6>Komoditi</h6>
+                                                    <p>Rp. xx.xxx.xx</p>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <img src="assets/img/komoditi/322e8205.png" alt=""></div>
+                                                <div class="col-8 p-0">
+                                                    <h6>Komoditi</h6>
+                                                    <p>Rp. xx.xxx.xx</p>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <img src="assets/img/komoditi/322e8205.png" alt=""></div>
+                                                <div class="col-8 p-0">
+                                                    <h6>Komoditi</h6>
+                                                    <p>Rp. xx.xxx.xx</p>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="row mb-5">
+                                                <div class="col-4">
+                                                    <img src="assets/img/komoditi/322e8205.png" alt=""></div>
+                                                <div class="col-8 p-0">
+                                                    <h6>Komoditi</h6>
+                                                    <p>Rp. xx.xxx.xx</p>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                        </div>
+
+                                        <div class="carousel-item">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <img src="assets/img/komoditi/Minyak-Sawit.jpg" alt=""></div>
+                                                <div class="col-8 p-0">
+                                                    <h6>Komoditi</h6>
+                                                    <p>Rp. xx.xxx.xx</p>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <img src="assets/img/komoditi/Minyak-Sawit.jpg" alt=""></div>
+                                                <div class="col-8 p-0">
+                                                    <h6>Komoditi</h6>
+                                                    <p>Rp. xx.xxx.xx</p>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <img src="assets/img/komoditi/Minyak-Sawit.jpg" alt=""></div>
+                                                <div class="col-8 p-0">
+                                                    <h6>Komoditi</h6>
+                                                    <p>Rp. xx.xxx.xx</p>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <img src="assets/img/komoditi/Minyak-Sawit.jpg" alt=""></div>
+                                                <div class="col-8 p-0">
+                                                    <h6>Komoditi</h6>
+                                                    <p>Rp. xx.xxx.xx</p>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="row mb-5">
+                                                <div class="col-4">
+                                                    <img src="assets/img/komoditi/Minyak-Sawit.jpg" alt=""></div>
+                                                <div class="col-8 p-0">
+                                                    <h6>Komoditi</h6>
+                                                    <p>Rp. xx.xxx.xx</p>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                        </div>
+
+                                        <div class="carousel-item">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <img src="assets/img/komoditi/download.jpg" alt=""></div>
+                                                <div class="col-8 p-0">
+                                                    <h6>Komoditi</h6>
+                                                    <p>Rp. xx.xxx.xx</p>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <img src="assets/img/komoditi/download.jpg" alt=""></div>
+                                                <div class="col-8 p-0">
+                                                    <h6>Komoditi</h6>
+                                                    <p>Rp. xx.xxx.xx</p>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <img src="assets/img/komoditi/download.jpg" alt=""></div>
+                                                <div class="col-8 p-0">
+                                                    <h6>Komoditi</h6>
+                                                    <p>Rp. xx.xxx.xx</p>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <img src="assets/img/komoditi/download.jpg" alt=""></div>
+                                                <div class="col-8 p-0">
+                                                    <h6>Komoditi</h6>
+                                                    <p>Rp. xx.xxx.xx</p>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="row mb-5">
+                                                <div class="col-4">
+                                                    <img src="assets/img/komoditi/download.jpg" alt=""></div>
+                                                <div class="col-8 p-0">
+                                                    <h6>Komoditi</h6>
+                                                    <p>Rp. xx.xxx.xx</p>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                                        data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                                        data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 pl-2 pr-0">
+                            <div class="shadow-lg p-3 bg-white rounded h-100 animated fadeIn" id="report">
+                                <div class="input-group mb-2 title">
+                                    <h6><i>Pengaduan Konsumen :</i></h6>
+                                </div>
+                                <div id="reportitem" class="carousel slide" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#reportitem" data-slide-to="0" class="active"></li>
+                                        <li data-target="#reportitem" data-slide-to="1"></li>
+                                        <li data-target="#reportitem" data-slide-to="2"></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <img src="assets/img/pengaduan/10-Besar-Pengaduan1.jpg" alt=""></div>
+                                                <div class="col-8 p-0">
+                                                    <h6>Kuilitas Jelek</h6>
+                                                    <p>Aduan xxxxxxxx</p>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <img src="assets/img/pengaduan/10-Besar-Pengaduan1.jpg" alt=""></div>
+                                                <div class="col-8 p-0">
+                                                    <h6>Kuilitas Jelek</h6>
+                                                    <p>Aduan xxxxxxxx</p>
+                                                </div>
+                                            </div>
+                                            <hr>
+
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <img src="assets/img/pengaduan/10-Besar-Pengaduan1.jpg" alt=""></div>
+                                                <div class="col-8 p-0">
+                                                    <h6>Kuilitas Jelek</h6>
+                                                    <p>Aduan xxxxxxxx</p>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <img src="assets/img/pengaduan/10-Besar-Pengaduan1.jpg" alt=""></div>
+                                                <div class="col-8 p-0">
+                                                    <h6>Kuilitas Jelek</h6>
+                                                    <p>Aduan xxxxxxxx</p>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="row mb-5">
+                                                <div class="col-4">
+                                                    <img src="assets/img/pengaduan/10-Besar-Pengaduan1.jpg" alt=""></div>
+                                                <div class="col-8 p-0">
+                                                    <h6>Kuilitas Jelek</h6>
+                                                    <p>Aduan xxxxxxxx</p>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                        </div>
+
+                                        <div class="carousel-item">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <img src="assets/img/pengaduan/DATA PENGADUAN MASYARAKAT.jpg" alt=""></div>
+                                                <div class="col-8 p-0">
+                                                    <h6>Kuilitas Jelek</h6>
+                                                    <p>Aduan xxxxxxxx</p>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <img src="assets/img/pengaduan/DATA PENGADUAN MASYARAKAT.jpg" alt=""></div>
+                                                <div class="col-8 p-0">
+                                                    <h6>Kuilitas Jelek</h6>
+                                                    <p>Aduan xxxxxxxx</p>
+                                                </div>
+                                            </div>
+                                            <hr>
+
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <img src="assets/img/pengaduan/DATA PENGADUAN MASYARAKAT.jpg" alt=""></div>
+                                                <div class="col-8 p-0">
+                                                    <h6>Kuilitas Jelek</h6>
+                                                    <p>Aduan xxxxxxxx</p>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <img src="assets/img/pengaduan/DATA PENGADUAN MASYARAKAT.jpg" alt=""></div>
+                                                <div class="col-8 p-0">
+                                                    <h6>Kuilitas Jelek</h6>
+                                                    <p>Aduan xxxxxxxx</p>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="row mb-5">
+                                                <div class="col-4">
+                                                    <img src="assets/img/pengaduan/DATA PENGADUAN MASYARAKAT.jpg" alt=""></div>
+                                                <div class="col-8 p-0">
+                                                    <h6>Kuilitas Jelek</h6>
+                                                    <p>Aduan xxxxxxxx</p>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                        </div>
+
+                                        <div class="carousel-item">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <img src="assets/img/pengaduan/images.png" alt=""></div>
+                                                <div class="col-8 p-0">
+                                                    <h6>Kuilitas Jelek</h6>
+                                                    <p>Aduan xxxxxxxx</p>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <img src="assets/img/pengaduan/images.png" alt=""></div>
+                                                <div class="col-8 p-0">
+                                                    <h6>Kuilitas Jelek</h6>
+                                                    <p>Aduan xxxxxxxx</p>
+                                                </div>
+                                            </div>
+                                            <hr>
+
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <img src="assets/img/pengaduan/images.png" alt=""></div>
+                                                <div class="col-8 p-0">
+                                                    <h6>Kuilitas Jelek</h6>
+                                                    <p>Aduan xxxxxxxx</p>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <img src="assets/img/pengaduan/images.png" alt=""></div>
+                                                <div class="col-8 p-0">
+                                                    <h6>Kuilitas Jelek</h6>
+                                                    <p>Aduan xxxxxxxx</p>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="row mb-5">
+                                                <div class="col-4">
+                                                    <img src="assets/img/pengaduan/images.png" alt=""></div>
+                                                <div class="col-8 p-0">
+                                                    <h6>Kuilitas Jelek</h6>
+                                                    <p>Aduan xxxxxxxx</p>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#reportitem" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#reportitem" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5 pr-0">
+                    <div class="shadow-lg p-3 mt-2 bg-white rounded animated flipInX" id="grafik">
+                        <div class="chart-container">
+                            <canvas id="line-chart" height="130px"></canvas>
+                        </div>
+                    </div>
+                    <!-- <div class="shadow-lg mt-3" id="title">
+                        <h6><i>Pengajuan SPPD :</i></h6>
+                    </div> -->
+                    <div class="shadow-lg mt-3 rounded p-3 bg-white" id="sppd">
+                        <div class="input-group mb-2 title">
+                            <h6><i>Pengajuan SPPD :</i></h6>
+                        </div>
+                        <hr>
+                        <ul class="mt-1">
+                            <li>
+                                <div>
+                                    <i>
+                                        <h6>Dinas Yang Mengajukan</h6>
+                                    </i>
+                                    <h6>Rp. xxxxxx</h6>
+                                    <p>Kegiatan : bla bla bla</p>
+                                </div>
+                                <hr>
+                            </li>
+                            <li>
+                                <div>
+                                    <i>
+                                        <h6>Dinas Yang Mengajukan</h6>
+                                    </i>
+                                    <h6>Rp. xxxxxx</h6>
+                                    <p>Kegiatan : bla bla bla</p>
+                                </div>
+                                <hr>
+                            </li>
+                            <li>
+                                <div>
+                                    <i>
+                                        <h6>Dinas Yang Mengajukan</h6>
+                                    </i>
+                                    <h6>Rp. xxxxxx</h6>
+                                    <p>Kegiatan : bla bla bla</p>
+                                </div>
+                                <hr>
+                            </li>
+                            <li>
+                                <div>
+                                    <i>
+                                        <h6>Dinas Yang Mengajukan</h6>
+                                    </i>
+                                    <h6>Rp. xxxxxx</h6>
+                                    <p>Kegiatan : bla bla bla</p>
+                                </div>
+                                <hr>
+                            </li>
+                            <li>
+                                <div>
+                                    <i>
+                                        <h6>Dinas Yang Mengajukan</h6>
+                                    </i>
+                                    <h6>Rp. xxxxxx</h6>
+                                    <p>Kegiatan : bla bla bla</p>
+                                </div>
+                                <hr>
+                            </li>
+                            <li>
+                                <div>
+                                    <i>
+                                        <h6>Dinas Yang Mengajukan</h6>
+                                    </i>
+                                    <h6>Rp. xxxxxx</h6>
+                                    <p>Kegiatan : bla bla bla</p>
+                                </div>
+                                <hr>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="assets/js/jquery-2.2.4.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/chart.js"></script>
+
+</html>
